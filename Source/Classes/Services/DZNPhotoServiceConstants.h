@@ -38,6 +38,9 @@ extern NSString *photoSearchUrlPathForService(DZNPhotoPickerControllerServices s
 /** Returns a key to be used for setting a consumer identifier value, for a specified service. */
 extern NSString *keyForAPIConsumerKey(DZNPhotoPickerControllerServices service);
 
+/** Returns a key to be used as a header for the API key, for a specificed service. */
+extern NSString *keyForAPIHeaderKey(DZNPhotoPickerControllerServices service);
+
 /** Returns a key to be used for setting a consumer secret value, for a specified service. */
 extern NSString *keyForAPIConsumerSecret(DZNPhotoPickerControllerServices service);
 
