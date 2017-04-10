@@ -259,7 +259,7 @@
     }
 
     if (keyForAPIHeaderKey(self.service)) {
-        [self.requestSerializer setValue:keyForAPIConsumerKey(self.service) forHTTPHeaderField:keyForAPIHeaderKey(self.service)];
+        [self.requestSerializer setValue:[self consumerKey] forHTTPHeaderField:keyForAPIHeaderKey(self.service)];
     }
     
     [self GET:path parameters:params progress:NULL success:^(NSURLSessionDataTask *task, id response) {
