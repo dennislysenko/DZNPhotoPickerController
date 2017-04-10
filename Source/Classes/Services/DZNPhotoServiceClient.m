@@ -119,7 +119,7 @@
     // if (self.service == DZNPhotoPickerControllerServiceBingImages) {
     //     [params setObject:[NSString stringWithFormat:@"'%@'", keyword] forKey:keyForSearchTerm(self.service)];
     // } else {
-    //     [params setObject:keyword forKey:keyForSearchTerm(self.service)];
+    [params setObject:keyword forKey:keyForSearchTerm(self.service)];
     // }
     
     if (keyForSearchResultPerPage(self.service)) {
