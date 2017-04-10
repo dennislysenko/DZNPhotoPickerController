@@ -156,7 +156,7 @@
     {
         [params setObject:@"Moderate" forKey:@"safeSearch"];
 
-                NSInteger offset = resultPerPage * (page - 1);
+        NSInteger offset = resultPerPage * page;
         [params setObject:@(offset) forKey:@"offset"];
         
         //Default to size medium. Size Large causes some buggy behavior with download times.
